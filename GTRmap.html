@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>프랜차이즈 매장 지도</title>
+<style>
+  body { margin:0; padding:0; font-family: Arial, sans-serif; }
+  #container { display:flex; height:100vh; }
+  #store-list { width:250px; border-right:1px solid #ccc; overflow-y:auto; padding:10px; box-sizing:border-box; }
+  #map { flex:1; }
+  .store-item { padding:8px; cursor:pointer; border-bottom:1px solid #eee; }
+  .store-item:hover { background-color:#f0f0f0; }
+</style>
+</head>
+<body>
+
+<div id="container">
+  <div id="store-list">
+    <div class="store-item" data-lat="37.4979" data-lng="127.0276">강남점</div>
+    <div class="store-item" data-lat="37.5563" data-lng="126.9220">홍대점</div>
+    <div class="store-item" data-lat="37.5133" data-lng="127.1002">잠실점</div>
+  </div>
+
+  <div id="map"></div>
+</div>
+
+<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=f08ec1b63e12971e5e68359eae71
